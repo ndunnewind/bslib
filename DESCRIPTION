@@ -74,3 +74,5 @@ Config/Needs/website:
     renv,
     r-lib/pkgdown,
     apreshill/quillt
+Remotes: 
+  rstudio/htmltools@jsx
