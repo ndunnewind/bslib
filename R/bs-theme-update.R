@@ -5,8 +5,8 @@
 bs_base_colors <- function(theme, bg = NULL, fg = NULL) {
   assert_bs_theme(theme)
   if (is.null(bg) && is.null(fg)) return(theme)
-  if (is.null(bg)) stop("Cannot specify bg without fg.")
-  if (is.null(fg)) stop("Cannot specify fg without bg.")
+  if (is.null(bg)) stop("Cannot specify fg without bg.")
+  if (is.null(fg)) stop("Cannot specify bg without fg.")
 
   args <- validate_and_normalize_colors(list(bg = bg, fg = fg))
   # In some cases, bg/fg really means $body-bg/$body-color, not $white/$black
